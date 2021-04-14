@@ -32,15 +32,50 @@ inquirer
 			message: "Add Engineer, Intern or create team?",
 			name: "continue",
 			choices: ["Engineer", "Intern", "Done"],
-		}.then((answers) => {
-			if (answers.continue === "Engineer") {
-			} else if (answers.continue === "Intern") {
-			} else {
-				process.exit();
-			}
-		}),
+		},
 	])
-
+	.then((answers) => {
+		if (answers.continue === "Engineer") {
+			inquirer.prompt([
+				{
+					type: "input",
+					message: "What is the Engineer's name?",
+					name: "name",
+				},
+				{
+					type: "number",
+					message: "What is their employee ID?",
+					name: "id",
+				},
+				{
+					type: "input",
+					message: "What is their email address?",
+					name: "email",
+				},
+			]);
+		} else if (answers.continue === "Intern") {
+			inquirer.prompt([
+				{
+					type: "input",
+					message: "What is the Intern's name?",
+					name: "name",
+				},
+				{
+					type: "number",
+					message: "What is their employee ID?",
+					name: "id",
+				},
+				{
+					type: "input",
+					message: "What is their email address?",
+					name: "email",
+				},
+			]);
+		} else {
+			console.log("Done");
+			process.exit();
+		}
+	})
 	.then((answers) => {
 		// const card = `<div class="col mb-4">
 		//     <div class="card bg-light shadow bg-white rounded">
