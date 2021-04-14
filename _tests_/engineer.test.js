@@ -10,7 +10,7 @@ describe("Engineer", () => {
 			expect(engineerGitHub).toBe(github);
 		});
 	});
-	//Change Role to Engineer
+	// group for getRole() returns 'engineer'
 	describe("getRole", () => {
 		it("Employee role should be replaced with Engineer role", () => {
 			const engineer = new Engineer("Bob", 1, "bob@gamil.com", "javierperez98");

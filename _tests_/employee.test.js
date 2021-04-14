@@ -40,7 +40,7 @@ describe("Employee", () => {
 			expect(empEmail).toBe(email);
 		});
 	});
-	// group for getRole()—returns 'Employee'
+	// group for getRole() returns 'Employee'
 	describe("getRole()", () => {
 		it("Employee role should be returned.", () => {
 			const emp = new Employee("Bob", 1, "bob@gmail.com");
