@@ -7,19 +7,17 @@ describe("Employee", () => {
 			const name = "Bob";
 			const id = 1;
 			const email = "bob@gmail.com";
-			const role = "Employee";
-			const emp = new Employee(name, id, email, role);
+			const emp = new Employee(name, id, email);
 			expect(emp.name).toBe(name);
 			expect(emp.id).toBe(id);
 			expect(emp.email).toBe(email);
-			expect(emp.role).toBe(role);
 		});
 	});
 	// group for getName()
 	describe("getName()", () => {
 		it("Employee name should be returned.", () => {
 			const name = "Bob";
-			const emp = new Employee(name, 1, "bob@gmail.com", "Employee");
+			const emp = new Employee(name, 1, "bob@gmail.com");
 			const empName = emp.getName();
 			expect(empName).toBe(name);
 		});
@@ -28,7 +26,7 @@ describe("Employee", () => {
 	describe("getId()", () => {
 		it("Employee id should be returned.", () => {
 			const id = 1;
-			const emp = new Employee("Bob", id, "bob@gmail.com", "Employee");
+			const emp = new Employee("Bob", id, "bob@gmail.com");
 			const empId = emp.getId();
 			expect(empId).toBe(id);
 		});
@@ -37,7 +35,7 @@ describe("Employee", () => {
 	describe("getEmail()", () => {
 		it("Employee email should be returned.", () => {
 			const email = "bob@gmail.com";
-			const emp = new Employee("Bob", 1, email, "Employee");
+			const emp = new Employee("Bob", 1, email);
 			const empEmail = emp.getEmail();
 			expect(empEmail).toBe(email);
 		});
@@ -45,10 +43,9 @@ describe("Employee", () => {
 	// group for getRole()—returns 'Employee'
 	describe("getRole()", () => {
 		it("Employee role should be returned.", () => {
-			const role = "Employee";
-			const emp = new Employee("Bob", 1, "bob@gmail.com", role);
+			const emp = new Employee("Bob", 1, "bob@gmail.com");
 			const empRole = emp.getRole();
-			expect(empRole).toBe(role);
+			expect(empRole).toBe("Employee");
 		});
 	});
 });
