@@ -104,7 +104,7 @@ class MakeTeam {
 							<ul class="list-group list-group-flush mx-3 my-4 border">
 								<li class="list-group-item">ID: ${engineer.id}</li>
 								<li class="list-group-item">Email: ${engineer.email}</li>
-								<li class="list-group-item">Office Number: ${engineer.github}</li>
+								<li class="list-group-item">GitHub: ${engineer.github}</li>
 							</ul>
 						</div>
 						</div>`;
@@ -145,12 +145,12 @@ class MakeTeam {
 					<div class="card bg-light shadow bg-white rounded">
 						<div class="card-body bg-secondary text-white">
 							<h4 class="card-title">${intern.name}</h4>
-							<h4 class="card-title">${new Engineer().getRole()}</h4>
+							<h4 class="card-title">${new Intern().getRole()}</h4>
 						</div>
 						<ul class="list-group list-group-flush mx-3 my-4 border">
 							<li class="list-group-item">ID: ${intern.id}</li>
 							<li class="list-group-item">Email: ${intern.email}</li>
-							<li class="list-group-item">Office Number: ${intern.school}</li>
+							<li class="list-group-item">School: ${intern.school}</li>
 						</ul>
 					</div>
 					</div>`;
