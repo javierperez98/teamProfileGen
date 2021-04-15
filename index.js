@@ -41,7 +41,7 @@ class MakeTeam {
 				<div class="card bg-light shadow bg-white rounded">
 					<div class="card-body bg-secondary text-white">
 						<h4 class="card-title">${manager.name}</h4>
-						<h4 class="card-title">☕ Manager</h4>
+						<h4 class="card-title">${new Manager().getRole()}</h4>
 					</div>
 					<ul class="list-group list-group-flush mx-3 my-4 border">
 						<li class="list-group-item">ID: ${manager.id}</li>
@@ -99,7 +99,7 @@ class MakeTeam {
 						<div class="card bg-light shadow bg-white rounded">
 							<div class="card-body bg-secondary text-white">
 								<h4 class="card-title">${engineer.name}</h4>
-								<h4 class="card-title">👓 Engineer</h4>
+								<h4 class="card-title">${new Engineer().getRole()}</h4>
 							</div>
 							<ul class="list-group list-group-flush mx-3 my-4 border">
 								<li class="list-group-item">ID: ${engineer.id}</li>
@@ -145,7 +145,7 @@ class MakeTeam {
 					<div class="card bg-light shadow bg-white rounded">
 						<div class="card-body bg-secondary text-white">
 							<h4 class="card-title">${intern.name}</h4>
-							<h4 class="card-title">🎓 Intern</h4>
+							<h4 class="card-title">${new Engineer().getRole()}</h4>
 						</div>
 						<ul class="list-group list-group-flush mx-3 my-4 border">
 							<li class="list-group-item">ID: ${intern.id}</li>
@@ -189,7 +189,6 @@ class MakeTeam {
 							console.error(err);
 							return;
 						}
-						//file written successfully
 						console.log("Done");
 						process.exit();
 					});

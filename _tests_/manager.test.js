@@ -15,7 +15,7 @@ describe("Manager", () => {
 		it("Employee role should be replaced with Manager role", () => {
 			const manager = new Manager("Bob", 1, "bob@gamil.com", "561");
 			const managerRole = manager.getRole();
-			expect(managerRole).toBe("Manager");
+			expect(managerRole).toBe("☕ Manager");
 		});
 	});
 });

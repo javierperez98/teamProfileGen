@@ -15,7 +15,7 @@ describe("Intern", () => {
 		it("Employee role should be replaced with Intern role", () => {
 			const intern = new Intern("Bob", 1, "bob@gamil.com", "UCSD");
 			const internRole = intern.getRole();
-			expect(internRole).toBe("Intern");
+			expect(internRole).toBe("🎓 Intern");
 		});
 	});
 });

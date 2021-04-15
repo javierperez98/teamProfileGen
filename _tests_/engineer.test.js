@@ -15,7 +15,7 @@ describe("Engineer", () => {
 		it("Employee role should be replaced with Engineer role", () => {
 			const engineer = new Engineer("Bob", 1, "bob@gamil.com", "javierperez98");
 			const engineerRole = engineer.getRole();
-			expect(engineerRole).toBe("Engineer");
+			expect(engineerRole).toBe("👓 Engineer");
 		});
 	});
 });
