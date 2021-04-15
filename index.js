@@ -182,7 +182,7 @@ class MakeTeam {
 						<body>
 							<header>
 								<nav class="navbar navbar-expand-lg navbar-dark bg-primary p-4">
-									<h1 class="col-12 text-center text-white">Team Profile Generator</h1>
+									<h1 class="col-12 text-center text-white">My Team</h1>
 								</nav>
 							</header>
 							<main class="p-5 d-flex justify-content-center col-12">
