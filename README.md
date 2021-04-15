@@ -40,7 +40,7 @@ HTTPS Key: git clone https://github.com/javierperez98/teamProfileGen.git
 - This is what the file will create.
   ![TeamPage](images/html.png)
 - Link for video demo
-- https://drive.google.com/file/d/1WME21wrlHdN4iKp1kqSe6y6p1yFAfXif/view?usp=sharing
+- https://drive.google.com/file/d/1-ZREtB-Xrr88w2s4Jz0Nwj-6G5sWh7q9/view?usp=sharing
 
 ## Credits
 
