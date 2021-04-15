@@ -36,9 +36,9 @@ HTTPS Key: git clone https://github.com/javierperez98/teamProfileGen.git
 - The usages of this app is to provide you an easy an effortless Team HTML page for any project you may have.
 - The Team page templete follows the layout of what a professional Team page should contain.
 - This is what the app looks when you run it. Answer all the questions to create a html file.
-  ![Node Promots](images/console.png)
+  ![Node Promots](images/node.png)
 - This is what the file will create.
-  ![TeamPage](images/title.png)
+  ![TeamPage](images/html.png)
 
 ## Credits
 
